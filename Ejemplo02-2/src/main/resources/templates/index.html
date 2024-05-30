@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Bienvenido Panita!</title>
+</head>
+<body>
+<h1>Bienvenidooooo!!</h1>
+<h2 th:text="${nombre}"></h2>
+
+<div>
+<ul>
+<li th:each="fruta : ${frutas}">
+<span th:text="${fruta}"></span>
+</li>
+</ul>
+</div>
+</body>
+</html>
