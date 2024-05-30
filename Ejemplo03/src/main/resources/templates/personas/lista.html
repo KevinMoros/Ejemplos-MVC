@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Lista 1</title>
+</head>
+<body>
+<h1>Soy una página html.</h1>
+
+<table border=1>
+<tr th:each="persona:${lista}">
+	<td th:text="${persona.nombre}"></td>
+	<td th:text="${persona.apellido}"></td>
+	<td th:text="${persona.edad}"></td>
+</tr>
+</table>
+</body>
+</html>
